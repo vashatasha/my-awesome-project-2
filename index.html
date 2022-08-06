@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    >
+</script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>;
+
+  </head>
+  <body>
+    <div class="container">
+      <form class="searching" id="city-form">
+        <input type="text" id="city-input" placeholder="Enter your city" autofocus="on" />
+        <input type="submit" id="city-input" value="Search" />
+        <input type="submit" id="current-button" value="Current location" />
+        <h1 class="currentCity" id="current-city"> Paris, France </h1>
+        <h5> Data
+        </h5>
+          <h6 class="description" id="description">
+          Partly cloudy
+          </h6>
+        <div class="row">
+          <div class="col-1">
+            <img src="images/cloudy.png" alt="weathercity" width="120px" />
+          </div>
+          <div class="col-2">
+            <span class="temperature" id="current-temp">19</span>
+              <a href = "#" id ="celsium">ºC|</a>
+              <a href = "#" id ="fahrenheit">F</a>
+          </div>
+          <div class="col-2">
+            <div class="other">
+              <ul>
+                <li> <span> Pressure: </span> 
+                     <span class="prec" id="prec">0</span>
+                     <span>Pa</span>
+                </li>
+                <li> <span> Humidity: </span> 
+                     <span class="hum" id="hum">66</li>
+                      <span>%</span>
+                     </li>
+                <li> <span> Humidity: </span>
+                     <span class="wind" id="wind">14</span>
+                    <span>Km/h</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1">
+            <div class="card text-center" style="width: 5rem">
+              <h5 class="card-title cntr">Wed</h5>
+              <img src="images/clouds.png" class="card-img-top" alt="Clouds" />
+              <div class="card-body">
+                <p class="card-text">
+                <br \>
+                  <span class="bold">17ºC/</span>
+                  <span>11ºC</span>
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-1">
+              <div class="card text-center" style="width: 5rem">
+                <h5 class="card-title cntr">Thu</h5>
+                <img
+                  src="images/lightning.png"
+                  class="card-img-top"
+                  alt="Clouds"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="bold">13ºC/</span>
+                    <span>9ºC</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+              <div class="col-sm-1">
+                <div class="card text-center" style="width: 5rem">
+                  <h5 class="card-title cntr">Fri</h5>
+                  <img
+                    src="images/clouds.png"
+                    class="card-img-top"
+                    alt="Clouds"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                        <br \>
+                      <span class="bold">16ºC/</span>
+                      <span>13ºC</span>
+                    </p>
+                  </div>
+                </div>
+            </div>
+                <div class="col-sm-1">
+              <div class="card text-center" style="width: 5rem">
+                <h5 class="card-title cntr">Sat</h5>
+                <img
+                  src="images/cloudy.png"
+                  class="card-img-top"
+                  alt="Clouds"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="bold">18ºC/</span>
+                    <span>15ºC</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-1">
+                <div class="card text-center" style="width: 5rem">
+                  <h5 class="card-title cntr">Sun</h5>
+                  <img
+                    src="images/sunny.png"
+                    class="card-img-top"
+                    alt="Clouds"
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      <span class="bold">21ºC/</span>
+                      <span>17ºC</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+            <script src="src/index.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+</html>
