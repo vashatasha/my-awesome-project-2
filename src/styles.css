@@ -4,6 +4,7 @@
     margin: 50px auto;
     border: 1px solid #809bec;
     box-shadow:0 0 10px rgb(67, 129, 230);
+    border-radius: 10px;
    
     display: block;
   }
