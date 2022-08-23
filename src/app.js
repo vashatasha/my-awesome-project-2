@@ -78,6 +78,15 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+    iconElement.setAttribute("alt", response.data.weather[0].description);
+  
+
+    getForecast(response.data.coord);
   }
 function searchCity(city) {
   let apiKey = "6d8abbbb45a417fcf365a98e6e2fb4fe";
@@ -111,4 +120,4 @@ currentLocationButton.addEventListener("click", getLocation);
 
 searchCity("Kharkiv");
 
-displayForecast();
+
